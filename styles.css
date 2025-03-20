@@ -300,7 +300,7 @@ body {
 
 .mb-4 {
   margin-bottom: 1rem;
-  width: 300px;
+  /* width: 300px; */
   display: inline-block;
 }
 
@@ -881,4 +881,8 @@ body {
     animation: cursor-blink 1s infinite;
   }
 }
+
+/* @media (max-width: 768px) {
+  
+} */
 
