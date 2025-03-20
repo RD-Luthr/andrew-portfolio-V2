@@ -57,8 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
         return
       }
 
-      // Here you would normally send the form data to a server
-      alert("Thanks for your message! This is a demo, so no message was actually sent.")
+      // Open Gmail compose window with pre-filled email
+      const email = "randluthringer@gmail.com";
+      const subject = encodeURIComponent("Contact from Portfolio");
+      const body = encodeURIComponent(`Hello Andrew,\n\n`);
+      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`, "_blank");
 
       // Reset form
       contactForm.reset()
