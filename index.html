@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Luthringer | Data and Business Analytics Enthusiast</title>
+  <!-- <meta name="description" content="Personal portfolio of Andrew Luthringer, a developer and audio engineer specializing in interactive audio applications and creative coding."> -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Feather Icons (similar to Lucide) -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-dark text-gray-200">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dark-transparent backdrop-blur border-b border-dark-lighter">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#home" class="text-xl font-bold gradient-text">APL</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link active" data-section="home">
+            <i data-feather="user" class="w-4 h-4 mr-1"></i>
+            <span>Home</span>
+          </a>
+          <a href="#about" class="nav-link" data-section="about">
+            <i data-feather="user" class="w-4 h-4 mr-1"></i>
+            <span>About</span>
+          </a>
+          <a href="#project" class="nav-link" data-section="project">
+            <i data-feather="briefcase" class="w-4 h-4 mr-1"></i>
+            <span>Project</span>
+          </a>
+          <a href="#contact" class="nav-link" data-section="contact">
+            <i data-feather="send" class="w-4 h-4 mr-1"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button class="p-2 text-gray-400 hover:text-white">
+            <i data-feather="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center pt-16 pb-32 px-4 relative">
+      <!-- Background elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-teal-glow blur-100"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-blue-glow blur-100"></div>
+      </div>
+
+      <div class="container mx-auto max-w-4xl z-10">
+        <div class="text-center">
+          <div class="inline-block mb-4 px-4 py-1 rounded-full bg-dark-lighter border border-dark-border">
+            <span class="text-sm font-medium">Data and Business Analytics Enthusiast</span>
+          </div>
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 gradient-text hero-name">
+            Andrew Luthringer
+          </h1>
+          <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 hero-section-text">
+          </p>
+
+            <div class="flex justify-center space-x-4 mb-12">
+            <a href="public/Andrew_Rand_Luthringer_Resume_V4.pdf" target="_blank" rel="noopener noreferrer" class="social-button">
+              <i data-feather="file-text"></i>
+              <span class="sr-only">Resume</span>
+            </a>
+            <a href="https://www.linkedin.com/in/rand-luthringer/" target="_blank" rel="noopener noreferrer" class="social-button">
+              <i data-feather="linkedin"></i>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+            <a href="https://github.com/RD-Luthr" target="_blank" rel="noopener noreferrer" class="social-button">
+              <i data-feather="github"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
+            <a href="mailto:randluthringer@gmail.com" class="social-button">
+              <i data-feather="mail"></i>
+              <span class="sr-only">Email</span>
+            </a>
+            </div>
+
+          <div class="flex justify-center space-x-4" style="margin-top: 32px;">
+            <a href="#project">
+              <button class="primary-button">
+                View My Work
+              </button>
+            </a>
+            <a href="#contact">
+              <button class="secondary-button">
+                Contact Me
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <a href="#about">
+          <button class="p-2 rounded-full bg-dark-lighter border border-dark-border hover:bg-dark-hover transition-all duration-300">
+            <!-- <i data-feather="arrow-down" class="w-5 h-5"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down w-5 h-5"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-4 bg-dark-alt">
+      <div class="container mx-auto max-w-6xl">
+        <div class="section-header">
+          <h2 class="text-3xl md:text-4xl font-bold gradient-text">About Me</h2>
+          <div class="mt-4 mx-auto w-24 h-1 gradient-bg rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
+          <div class="space-y-6">
+            <h3 class="text-2xl font-bold text-white">Developer passionate about data science and entrepreneurship</h3>
+            <p class="text-gray-400">
+              Pursuing a B.S. in Data Science and AI at the University of Miami, I specialize in data analysis, programming, and statistical modeling. 
+              With minors in Entrepreneurship and Mathematics, I integrate technical expertise with business insights.
+            </p>
+            <p class="text-gray-400">
+              At PadStats, I designed AI-powered analytics tools and user interfaces for real estate professionals, enhancing decision-making processes. 
+              As a technical analyst at Bonsai Applied Computations Group, I develop frontend UI/UX solutions and algorithms across neuroscience, marketing, and finance, leveraging data-driven insights to drive innovation.
+            </p>
+            <p class="text-gray-400">
+              My technical expertise spans Java, Python, R, JavaScript, SQL, and web technologies, with certifications in Microsoft Azure AI and Bloomberg Market Concepts. 
+              Beyond work, I love to exercise, read non-fiction books, and continuously develop my skills while exploring business-driven tech innovations, intuitive UI design, and cutting-edge applications of machine learning and data visualization.
+            </p>
+
+            <div class="pt-4 grid grid-cols-2 gap-4">
+              <div class="p-4 rounded-lg bg-dark-lighter border border-dark-border">
+                <div class="text-3xl font-bold text-teal">3+</div>
+                <div class="text-sm text-gray-400">Years Experience</div>
+              </div>
+              <div class="p-4 rounded-lg bg-dark-lighter border border-dark-border">
+                <div class="text-3xl font-bold text-blue">10</div>
+                <div class="text-sm text-gray-400">Projects Completed</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="relative h-full">
+              <!-- <div class="absolute -top-4 -left-4 w-full h-full rounded-lg border-2 border-teal-border"></div>
+              <div class="absolute -bottom-4 -right-4 w-full h-full rounded-lg border-2 border-blue-border"></div> -->
+            
+              <div class="relative z-10 rounded-lg overflow-hidden h-full">
+                <img 
+                  src="public/Photo_2023-12-18_115803 3.jpg" 
+                  alt="Andrew Luthringer" 
+                  class="object-cover h-full w-full"
+                >
+              </div>
+            </div>            
+          </div>
+        </div>
+
+        <div class="mt-20">
+          <h3 class="text-2xl font-bold text-white mb-8">My Skills</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="skill-card">
+              <div class="text-3xl mb-4">🧑🏼‍💻</div>
+              <h4 class="text-lg font-semibold text-white mb-3 group-hover:text-teal transition-colors">Data Science</h4>
+              <ul class="space-y-2">
+                <li class="skill-item">Python</li>
+                <li class="skill-item">R</li>
+                <li class="skill-item">SQL</li>
+              </ul>
+            </div>
+            
+            <div class="skill-card">
+              <div class="text-3xl mb-4">💻</div>
+              <h4 class="text-lg font-semibold text-white mb-3 group-hover:text-teal transition-colors">Frontend Development</h4>
+              <ul class="space-y-2">
+                <li class="skill-item">HTML</li>
+                <li class="skill-item">CSS</li>
+                <li class="skill-item">JS</li>
+                <li class="skill-item">React</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <div class="text-3xl mb-4">📊</div>
+              <h4 class="text-lg font-semibold text-white mb-3 group-hover:text-teal transition-colors">Business Analytics</h4>
+              <ul class="space-y-2">
+                <li class="skill-item">Microsoft Power BI</li>
+                <li class="skill-item">Microsoft Excel</li>
+                <li class="skill-item">Tableau</li>
+              </ul>
+            </div>
+            
+            <div class="skill-card">
+              <div class="text-3xl mb-4">🦿</div>
+              <h4 class="text-lg font-semibold text-white mb-3 group-hover:text-teal transition-colors">Artifical Intelligence</h4>
+              <ul class="space-y-2">
+                <li class="skill-item">FastAI</li>
+                <li class="skill-item">PyTorch</li>
+                <li class="skill-item">TensorFlow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project" class="py-24 px-4">
+      <div class="container mx-auto max-w-6xl">
+        <div class="section-header">
+          <h2 class="text-3xl md:text-4xl font-bold gradient-text">Featured Project</h2>
+          <div class="mt-4 mx-auto w-24 h-1 gradient-bg rounded-full"></div>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 lg:grid-cols-5 gap-8">
+          <div class="lg:col-span-3 rounded-xl overflow-hidden">
+            <div class="relative group">
+              <img 
+                src="public/1727540698552.jpeg" 
+                alt="BonsaiACG Web Platform" 
+                class="w-full object-cover rounded-xl"
+              >
+              <!-- <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
+                <div class="p-6">
+                  <div class="flex space-x-3">
+                    <a href="https://soundwave-demo.vercel.app" target="_blank" rel="noopener noreferrer">
+                      <button class="p-2 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+                        <i data-feather="external-link" class="w-5 h-5"></i>
+                      </button>
+                    </a>
+                    <a href="https://github.com/andrewluthringer/soundwave" target="_blank" rel="noopener noreferrer">
+                      <button class="p-2 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+                        <i data-feather="github" class="w-5 h-5"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="lg:col-span-2 space-y-6">
+            <div>
+              <div class="inline-block px-3 py-1 rounded-full bg-teal-bg text-teal text-sm font-medium mb-2">
+                Featured Project
+              </div>
+              <h3 class="text-2xl font-bold text-white">Bonsai ACG Web Platform</h3>
+              <p class="text-gray-400 mt-2">
+                A dynamic web platform designed to showcase the innovative projects of the Bonsai Applied Computations Group, attract clients, 
+                and facilitate seamless communication. Built with a modern, user-friendly interface, the platform highlights interdisciplinary research in data science, neuroscience, marketing, and finance.
+              </p>
+            </div>
+
+            <!-- <div>
+              <h4 class="text-lg font-semibold text-white mb-2">Key Features</h4>
+              <ul class="space-y-2">
+                <li class="feature-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-1 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-300">Modern UI designed for an intuitive user experience</span>
+                </li>
+                <li class="feature-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-1 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-300">Project showcase to highlight Bonsai ACG’s work</span>
+                </li>
+                <li class="feature-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-1 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-300">Seamless contact form for communication</span>
+                </li>
+                <li class="feature-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-1 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-300">Smooth navigation and engagement</span>
+                </li>
+              </ul>
+            </div> -->
+
+            <div>
+              <h4 class="text-lg font-semibold text-white mb-2">Technologies Used</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JS</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <a href="https://bonsaiacg.com/" target="_blank" rel="noopener noreferrer">
+                <button class="primary-button flex items-center">
+                  <i data-feather="external-link" class="w-4 h-4 mr-2"></i>
+                  View Website
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-4 bg-dark-alt">
+      <div class="container mx-auto max-w-6xl">
+        <div class="section-header">
+          <h2 class="text-3xl md:text-4xl font-bold gradient-text">Get In Touch</h2>
+          <div class="mt-4 mx-auto w-24 h-1 gradient-bg rounded-full"></div>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="space-y-6">
+            <h3 class="text-2xl font-bold text-white">Let's work together</h3>
+            <p class="text-gray-400">
+              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+              Feel free to reach out if you want to connect!
+            </p>
+
+            <div class="space-y-4 pt-4">
+              <div class="flex items-center space-x-4">
+                <div class="p-3 rounded-lg bg-dark-lighter border border-dark-border">
+                  <i data-feather="mail" class="w-5 h-5 text-teal"></i>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-400">Email</div>
+                  <a href="mailto:randluthringer@gmail.com" class="text-white hover:text-teal transition-colors">
+                    randluthringer@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div class="p-3 rounded-lg bg-dark-lighter border border-dark-border">
+                  <i data-feather="linkedin" class="w-5 h-5 text-teal"></i>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-400">LinkedIn</div>
+                  <a href="https://www.linkedin.com/in/rand-luthringer/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-teal transition-colors">
+                    linkedin.com/in/rand-luthringer
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div class="p-3 rounded-lg bg-dark-lighter border border-dark-border">
+                  <i data-feather="github" class="w-5 h-5 text-teal"></i>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-400">GitHub</div>
+                  <a href="https://github.com/RD-Luthr" target="_blank" rel="noopener noreferrer" class="text-white hover:text-teal transition-colors">
+                    github.com/RD-Luthr
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-dark-lighter border border-dark-border rounded-xl p-6">
+            <form class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-400 mb-1">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-input"
+                  placeholder="Your name"
+                >
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-400 mb-1">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-input"
+                  placeholder="Your email"
+                >
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-400 mb-1">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="form-input"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full primary-button flex items-center justify-center"
+              >
+                <i data-feather="send" class="w-4 h-4 mr-2"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 border-t border-dark-lighter">
+      <div class="container mx-auto max-w-6xl">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <a href="#home" class="text-xl font-bold gradient-text">
+              Andrew Luthringer
+            </a>
+          </div>
+
+          <div class="flex space-x-4">
+            <a href="https://github.com/RD-Luthr" target="_blank" rel="noopener noreferrer">
+              <button class="p-2 text-gray-400 hover:text-teal transition-colors">
+                <i data-feather="github" class="w-5 h-5"></i>
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/rand-luthringer/" target="_blank" rel="noopener noreferrer">
+              <button class="p-2 text-gray-400 hover:text-teal transition-colors">
+                <i data-feather="linkedin" class="w-5 h-5"></i>
+              </button>
+            </a>
+            <a href="mailto:randluthringer@gmail.com">
+              <button class="p-2 text-gray-400 hover:text-teal transition-colors">
+                <i data-feather="mail" class="w-5 h-5"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-6 text-center text-sm text-gray-500">
+          <p>© <span id="current-year"></span> Andrew Luthringer. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
+
