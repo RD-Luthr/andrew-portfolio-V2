@@ -211,10 +211,78 @@
     <section id="project" class="py-24 px-4">
       <div class="container mx-auto max-w-6xl">
         <div class="section-header">
-          <h2 class="text-3xl md:text-4xl font-bold gradient-text">Featured Project</h2>
+          <h2 class="text-3xl md:text-4xl font-bold gradient-text">Featured Projects</h2>
           <div class="mt-4 mx-auto w-24 h-1 gradient-bg rounded-full"></div>
         </div>
 
+        <div class="mt-16 grid grid-cols-1 lg:grid-cols-5 gap-8">
+          <div class="lg:col-span-3 flex space-x-4">
+            <div class="w-1/2 rounded-xl overflow-hidden">
+              <img 
+                src="public/Screenshot 2025-03-24 at 10.28.34 PM.png" 
+                alt="Product Photo" 
+                class="w-full object-cover rounded-xl"
+                style="height: 420px; width: 325px;"
+              >
+            </div>
+            <div class="w-1/2 rounded-xl overflow-hidden">
+              <img 
+                src="public/Screenshot 2025-03-24 at 10.27.28 PM.png" 
+                alt="Product Photo" 
+                class="w-full object-cover rounded-xl"
+                style="height: 420px; width: 325px;"
+              >
+            </div>
+          </div>
+
+          <div class="lg:col-span-2 space-y-6">
+            <div>
+                <!-- <div class="inline-block px-3 py-1 rounded-full bg-dark-lighter text-teal text-sm font-medium mb-2">
+                Role: Frontend Developer
+                </div> -->
+              <h3 class="text-2xl font-bold text-white">Genetic Product Algorithm</h3>
+              <p class="text-gray-400 mt-2">
+                An algorithm-driven analytics system developed for the Miami Herbert Business School by the Bonsai Applied Computations Group, 
+                designed to power targeted marketing strategies through advanced survey data analysis. Featuring real-time feedback loops and automated scoring mechanisms, 
+                the system enables continuous refinement of data-driven product recommendations, enhancing decision-making and engagement.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Role: Frontend Developer</span>
+            </div>
+            
+
+            <div>
+              <h4 class="text-lg font-semibold text-white mb-2">Technologies Used</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JS</span>
+                <span class="tech-tag">SQL</span>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <a href="https://rd-luthr.github.io/frontend_ranking_system/" target="_blank" rel="noopener noreferrer">
+                <button class="primary-button flex items-center">
+                  <i data-feather="external-link" class="w-4 h-4 mr-2"></i>
+                  View Live Demo
+                </button>
+              </a>
+
+                <a href="https://github.com/RD-Luthr/frontend_ranking_system" target="_blank" rel="noopener noreferrer" class="social-button" style="margin-left: 15px;">
+                <i data-feather="github"></i>
+                <span class="sr-only">GitHub</span>
+                </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto max-w-6xl">
         <div class="mt-16 grid grid-cols-1 lg:grid-cols-5 gap-8">
           <div class="lg:col-span-3 rounded-xl overflow-hidden">
             <div class="relative group">
@@ -223,66 +291,21 @@
                 alt="BonsaiACG Web Platform" 
                 class="w-full object-cover rounded-xl"
               >
-              <!-- <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
-                <div class="p-6">
-                  <div class="flex space-x-3">
-                    <a href="https://soundwave-demo.vercel.app" target="_blank" rel="noopener noreferrer">
-                      <button class="p-2 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                        <i data-feather="external-link" class="w-5 h-5"></i>
-                      </button>
-                    </a>
-                    <a href="https://github.com/andrewluthringer/soundwave" target="_blank" rel="noopener noreferrer">
-                      <button class="p-2 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                        <i data-feather="github" class="w-5 h-5"></i>
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
 
           <div class="lg:col-span-2 space-y-6">
+
             <div>
-              <div class="inline-block px-3 py-1 rounded-full bg-teal-bg text-teal text-sm font-medium mb-2">
+              <!-- <div class="inline-block px-3 py-1 rounded-full bg-teal-bg text-teal text-sm font-medium mb-2">
                 Featured Project
-              </div>
+              </div> -->
               <h3 class="text-2xl font-bold text-white">Bonsai ACG Web Platform</h3>
               <p class="text-gray-400 mt-2">
                 A dynamic web platform designed to showcase the innovative projects of the Bonsai Applied Computations Group, attract clients, 
                 and facilitate seamless communication. Built with a modern, user-friendly interface, the platform highlights interdisciplinary research in data science, neuroscience, marketing, and finance.
               </p>
             </div>
-
-            <!-- <div>
-              <h4 class="text-lg font-semibold text-white mb-2">Key Features</h4>
-              <ul class="space-y-2">
-                <li class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-1 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-300">Modern UI designed for an intuitive user experience</span>
-                </li>
-                <li class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-1 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-300">Project showcase to highlight Bonsai ACG’s work</span>
-                </li>
-                <li class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-1 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-300">Seamless contact form for communication</span>
-                </li>
-                <li class="feature-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 mt-1 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-300">Smooth navigation and engagement</span>
-                </li>
-              </ul>
-            </div> -->
 
             <div>
               <h4 class="text-lg font-semibold text-white mb-2">Technologies Used</h4>
