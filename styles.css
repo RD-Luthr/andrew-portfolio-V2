@@ -563,6 +563,11 @@ body {
   flex-wrap: wrap;
 }
 
+.imageleft img,.imageright img {
+  height: 420px; 
+  width: 325px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -886,3 +891,16 @@ body {
   
 } */
 
+
+@media (max-width: 400px) {
+
+  .imageleft img{
+    height: 250px;
+    width: 170px;
+  }
+  .imageright img{
+    height: 250px;
+    width: 140px;
+  }
+
+}
